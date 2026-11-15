@@ -19,7 +19,10 @@ public class PlaylistService {
     );
 
 
-    private static final int AD_INTERVAL_SECONDS = 600;
+    private static final int AD_INTERVAL_SECONDS = 600; // ad interval in seconds
+
+
+    // method behind running the show
     public List<PlaylistItem>getPlaylist(boolean withAds){
         if(!withAds){
             return videos;
