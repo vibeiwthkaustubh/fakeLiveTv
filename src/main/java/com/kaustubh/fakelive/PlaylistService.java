@@ -10,6 +10,7 @@ import java.util.List;
 public class PlaylistService {
  /*This class is the manager that will handle form where should the data be sent when a get request arrives*/
 
+    
     private final List<PlaylistItem> videos =  List.of
             ( new PlaylistItem(1,"VIDEO" , "Movie 1" , "/stream/1" , 5936 ,0)
                   , new PlaylistItem(2,"VIDEO" , "Movie 2" , "/stream/2" , 5936 ,0)   );
