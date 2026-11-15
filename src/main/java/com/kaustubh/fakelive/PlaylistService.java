@@ -15,7 +15,8 @@ public class PlaylistService {
 
     private final List<PlaylistItem> videos = List.of(
             new PlaylistItem(1, "VIDEO", "Movie 1", "/stream/1", 5936, 0),
-            new PlaylistItem(2, "VIDEO", "Movie 2", "/stream/2", 5936, 0)
+            new PlaylistItem(2, "VIDEO", "Movie 2", "/stream/2", 5936, 0),
+
     );
 
     private final List<PlaylistItem> ads = List.of(
