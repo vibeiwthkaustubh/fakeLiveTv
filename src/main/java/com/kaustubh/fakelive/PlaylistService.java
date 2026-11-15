@@ -15,12 +15,25 @@ public class PlaylistService {
 
     private final List<PlaylistItem> videos = List.of(
             new PlaylistItem(1, "VIDEO", "Movie 1", "/stream/1", 5936, 0),
-            new PlaylistItem(2, "VIDEO", "Movie 2", "/stream/2", 5936, 0),
-
+            new PlaylistItem(2, "VIDEO", "Movie 2", "/stream/2", 7351, 0),
+            new PlaylistItem(3, "VIDEO", "Movie 3", "/stream/3", 8157, 0),
+            new PlaylistItem(4, "VIDEO", "Movie 4", "/stream/4", 10157, 0),
+            new PlaylistItem(5, "VIDEO", "Movie 5", "/stream/5", 5933, 0),
+            new PlaylistItem(6, "VIDEO", "Movie 6", "/stream/6", 5500, 0),
+            new PlaylistItem(7, "VIDEO", "Movie 7", "/stream/7", 4900, 0),
+            new PlaylistItem(8, "VIDEO", "Movie 8", "/stream/8", 6300, 0),
+            new PlaylistItem(9, "VIDEO", "Movie 9", "/stream/9", 5200, 0),
+            new PlaylistItem(10, "VIDEO", "Movie 10", "/stream/10", 5800, 0)
     );
 
     private final List<PlaylistItem> ads = List.of(
-            new PlaylistItem(101, "AD", "Ad 1", "/ads/1", 30, 0)
+            new PlaylistItem(101, "AD", "Ad 1", "/ads/1", 177, 0),
+            new PlaylistItem(102, "AD", "Ad 2", "/ads/2", 28, 0),
+            new PlaylistItem(103, "AD", "Ad 3", "/ads/3", 35, 0),
+            new PlaylistItem(104, "AD", "Ad 4", "/ads/4", 30, 0),
+            new PlaylistItem(105, "AD", "Ad 5", "/ads/5", 60, 0),
+            new PlaylistItem(106, "AD", "Ad 6", "/ads/6", 66, 0),
+            new PlaylistItem(107, "AD", "Ad 7", "/ads/7", 30, 0)
     );
 
     public List<PlaylistItem> getPlaylist(boolean withAds) {
