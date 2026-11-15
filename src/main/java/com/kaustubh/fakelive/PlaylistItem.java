@@ -7,7 +7,7 @@ public class PlaylistItem {  //
    private String title;
    private String url;
    private int durationSeconds;
-   private int startOffSeconds;
+   private int startOffsetSeconds;
 
     public PlaylistItem(int id, String type, String title, String url, int durationSeconds, int startOffSeconds) {
         this.id = id;
@@ -15,7 +15,7 @@ public class PlaylistItem {  //
         this.title = title;
         this.url = url;
         this.durationSeconds = durationSeconds;
-        this.startOffSeconds = startOffSeconds;
+        this.startOffsetSeconds = startOffSeconds;
     }
 
     public int getId() {
@@ -58,11 +58,11 @@ public class PlaylistItem {  //
         this.durationSeconds = durationSeconds;
     }
 
-    public int getStartOffSeconds() {
-        return startOffSeconds;
+    public int getStartOffsetSeconds() {
+        return startOffsetSeconds;
     }
 
-    public void setStartOffSeconds(int startOffSeconds) {
-        this.startOffSeconds = startOffSeconds;
+    public void setStartOffsetSeconds(int startOffSeconds) {
+        this.startOffsetSeconds = startOffSeconds;
     }
 }
