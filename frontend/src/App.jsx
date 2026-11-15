@@ -37,7 +37,9 @@ export default function App() {
 
       const video = videoRef.current;
       if (video) {
-        const targetUrl = `${API_BASE}${data.item.url}`;
+        const targetUrl = data.item.url.startsWith("http")
+          ? data.item.url
+          : `${window.location.origin}${data.item.url}`;
         video.muted = false; // Always unmuted — user controls volume on their device
 
         if (video.src !== targetUrl) {

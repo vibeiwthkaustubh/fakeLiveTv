@@ -14,26 +14,26 @@ public class PlaylistService {
     private static final int AD_INTERVAL_SECONDS = 600;
 
     private final List<PlaylistItem> videos = List.of(
-            new PlaylistItem(1, "VIDEO", "Movie 1", "/stream/1", 5936, 0),
-            new PlaylistItem(2, "VIDEO", "Movie 2", "/stream/2", 7351, 0),
-            new PlaylistItem(3, "VIDEO", "Movie 3", "/stream/3", 8157, 0),
-            new PlaylistItem(4, "VIDEO", "Movie 4", "/stream/4", 10157, 0),
-            new PlaylistItem(5, "VIDEO", "Movie 5", "/stream/5", 5933, 0),
-            new PlaylistItem(6, "VIDEO", "Movie 6", "/stream/6", 5500, 0),
-            new PlaylistItem(7, "VIDEO", "Movie 7", "/stream/7", 4900, 0),
-            new PlaylistItem(8, "VIDEO", "Movie 8", "/stream/8", 6300, 0),
-            new PlaylistItem(9, "VIDEO", "Movie 9", "/stream/9", 5200, 0),
-            new PlaylistItem(10, "VIDEO", "Movie 10", "/stream/10", 5800, 0)
+            new PlaylistItem(1, "VIDEO", "Movie 1", "/media/videos/video1.mp4", 5936, 0),
+            new PlaylistItem(2, "VIDEO", "Movie 2", "/media/videos/video2.mp4", 5400, 0),
+            new PlaylistItem(3, "VIDEO", "Movie 3", "/media/videos/video3.mp4", 4800, 0),
+            new PlaylistItem(4, "VIDEO", "Movie 4", "/media/videos/video4.mp4", 6200, 0),
+            new PlaylistItem(5, "VIDEO", "Movie 5", "/media/videos/video5.mp4", 5100, 0),
+            new PlaylistItem(6, "VIDEO", "Movie 6", "/media/videos/video6.mp4", 5500, 0),
+            new PlaylistItem(7, "VIDEO", "Movie 7", "/media/videos/video7.mp4", 4900, 0),
+            new PlaylistItem(8, "VIDEO", "Movie 8", "/media/videos/video8.mp4", 6300, 0),
+            new PlaylistItem(9, "VIDEO", "Movie 9", "/media/videos/video9.mp4", 5200, 0),
+            new PlaylistItem(10, "VIDEO", "Movie 10", "/media/videos/video10.mp4", 5800, 0)
     );
 
     private final List<PlaylistItem> ads = List.of(
-            new PlaylistItem(101, "AD", "Ad 1", "/ads/1", 177, 0),
-            new PlaylistItem(102, "AD", "Ad 2", "/ads/2", 28, 0),
-            new PlaylistItem(103, "AD", "Ad 3", "/ads/3", 35, 0),
-            new PlaylistItem(104, "AD", "Ad 4", "/ads/4", 30, 0),
-            new PlaylistItem(105, "AD", "Ad 5", "/ads/5", 60, 0),
-            new PlaylistItem(106, "AD", "Ad 6", "/ads/6", 66, 0),
-            new PlaylistItem(107, "AD", "Ad 7", "/ads/7", 30, 0)
+            new PlaylistItem(101, "AD", "Ad 1", "/media/ads/ad1.mp4", 30, 0),
+            new PlaylistItem(102, "AD", "Ad 2", "/media/ads/ad2.mp4", 30, 0),
+            new PlaylistItem(103, "AD", "Ad 3", "/media/ads/ad3.mp4", 30, 0),
+            new PlaylistItem(104, "AD", "Ad 4", "/media/ads/ad4.mp4", 30, 0),
+            new PlaylistItem(105, "AD", "Ad 5", "/media/ads/ad5.mp4", 30, 0),
+            new PlaylistItem(106, "AD", "Ad 6", "/media/ads/ad6.mp4", 30, 0),
+            new PlaylistItem(107, "AD", "Ad 7", "/media/ads/ad7.mp4", 30, 0)
     );
 
     public List<PlaylistItem> getPlaylist(boolean withAds) {
