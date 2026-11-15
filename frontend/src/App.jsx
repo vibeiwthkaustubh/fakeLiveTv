@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const API_BASE = "http://localhost:8080";
+const API_BASE = "https://fakelivetv.onrender.com";
 
 export default function App() {
   const [withAds, setWithAds] = useState(null);
